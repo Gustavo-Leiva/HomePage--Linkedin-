@@ -1,0 +1,271 @@
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #fff;           
+    
+}
+
+
+.container-all{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    padding: 5px 40px 20px 20px;
+    background-color: #fff; 
+    box-shadow: 3px 10px 15px rgba(179, 179, 179, .6); 
+    margin-bottom: 40px;    
+    
+}
+
+/*Posicionamiento del logo de linkedin*/
+.logo-linkedin img{
+    width: 15%;
+    margin: 18px 0px 0px 15px;
+
+}
+
+
+/*Estilos de Log in*/
+h1{
+    font-family: sans-serif;
+    font-weight:580;
+    color: black;
+    font-size: 1.7rem;
+    margin-bottom: 0px;
+}
+
+/*Estilos del h2*/
+h2{
+    font-family: sans-serif;
+    font-weight:lighter;
+    font-size: 1rem;
+    color: rgba(0,0,0,0.7);
+    margin-top: 3px;
+
+}
+
+
+/*estilos del user y password*/
+input {
+    width: 93%;
+    height: 45px;
+    padding: 10px 10px 0px 10px;
+    margin:5px 50px 15px 0px;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 210, 210);
+    font-size: 16px;
+    
+}
+
+/*Color del borde al hacer hover*/
+input:focus{
+    border-width: 2px;
+    border-color:#2283e4;
+}
+
+
+/*Fijar posicion a la etiquetas label*/
+.input-one label, .input-two label {
+    position: absolute;
+    margin-left: 10px;    
+    color: #8c8c8c;
+    
+}
+
+/*tamaño de la fuente a la etiqueta label*/
+.input-one label{    
+    top:38%;    
+    font-size: 1rem;
+    
+}
+
+
+/*tamaño de la fuente a la etiqueta label*/
+.input-two label {    
+    top: 52%;    
+    font-size: 1rem; 
+}
+
+/*Tamaño de la fuente y color al hacer click en el campo input*/
+.input-one input:focus ~ label,
+.input-two input:focus ~ label{
+    font-size: .8rem;
+    font-family: sans-serif;  
+    color: #000;
+    
+    
+}
+
+/*Movimiento de la etiqueta label al hacer click en el campo input*/
+.input-one input:focus ~ label,
+.input-one input:valid ~ label {
+    top: 36%;
+    
+    
+}
+
+
+/*Movimiento de la etiqueta label al hacer click en el campo input*/
+.input-two input:focus ~ label,
+.input-two input:valid ~ label {
+    top:50%;
+    
+}
+
+
+/*Eliminar subrayado a las etiquetas*/
+a {
+    text-decoration: none;
+    margin: 15px 0px 30px 0px;    
+       
+}
+
+/*Subrayar al hacer hover las etiquetas "A"*/
+a:hover{
+    text-decoration: underline;
+    
+}
+
+
+/*Texto de forgotten */
+.forgotten {
+    color: #0a66c2;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: medium;
+    padding: 15px 5px 2px 8px;
+    margin: 0px;
+    
+    }
+
+.forgotten:hover {   
+    margin: 15px 0px 0px 0px;
+    background-color: #aed0f3;
+    border-radius: 24px;
+    width: fit-content;
+    padding:15px 5px 2px 8px;
+    margin: 0px;
+   
+ 
+   
+}
+
+
+/*Estilos de login*/
+.login{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 28px;
+    padding: 5px 20px;
+    background-color: #0a66c2;
+    color: #fff;
+    font-size: medium; 
+    font-weight: 600;
+    font-family: sans-serif;
+    height: 40px;  
+    line-height: 45px;
+    margin-bottom: 5px;
+    
+}
+
+/*hover del login al hacer click*/
+.login:hover{
+    background-color: #21618C; 
+    text-decoration: none;
+    
+}
+
+
+/*Estilos de la clase separator*/
+.separator .line {
+    background-color: #dbdbdb;
+    height: 1px;
+    width: 44%;
+}
+
+.separator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+    color: #999;
+    
+}
+
+.separator p{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: rgb(104, 102, 102);
+}
+
+
+/*estilos de boton apple*/
+.login-apple{
+    display: flex;
+    justify-content: center;    
+    align-content: center;
+    border: 1px solid rgb(104, 102, 102);
+    border-radius: 28px;
+    padding: 1px;
+    margin-top: 5px;
+    height: 48px; 
+    
+    
+}
+
+.login-apple:hover{
+    background-color:  rgb(211, 210, 210);
+    cursor: pointer;
+}
+
+/*Estilo del logo apple*/
+.login-apple img{
+    height: 26px;
+    width: 26px;
+    margin-top: 11px;
+  
+}
+
+.login-apple p{
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    color: grey;
+    
+    
+}
+
+/*estilos del footer*/
+footer{
+    width: 385px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: grey; 
+   
+}
+
+
+/*estilos al pie de formulario de login*/
+.other a{
+   color: #21618C; 
+   font-size: 18px;
+   font-weight: bold;
+   margin-left: 6px;
+   padding: 5px 5px 0px;
+   
+}
+
+/*hover del join now*/
+.other a:hover {
+    background-color: #aed0f3;
+    border-radius: 120px;
+}
+
+
